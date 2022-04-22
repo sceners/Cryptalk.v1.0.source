@@ -1,0 +1,32 @@
+#define dlgCryptalk 101
+#define edtMainChat 1001
+#define lstUsers 1002
+#define edtToSend 1003
+#define btnCreateServer 1004
+#define ipaConnectTo 1005
+#define btnSend 1006
+#define btnConnect 1007
+#define ipaYourIP 1008
+#define btnAbout 1009
+#define stcYourIP 1010
+#define stcConnectTo 1011
+#define edtMyNick 1012
+dlgCryptalk DIALOGEX 5,5,288,202
+CAPTION "Cryptalk v1.0"
+FONT 8,"Courier New",400,0
+STYLE 0x10CA0800
+EXSTYLE 0x00000000
+BEGIN
+  CONTROL "",edtMainChat,"Edit",0x50210804,3,3,218,154,0x00020000
+  CONTROL "",lstUsers,"ListBox",0x50210141,224,3,60,154,0x00020000
+  CONTROL "",edtToSend,"Edit",0x50010080,3,161,218,10,0x00020000
+  CONTROL "Create server",btnCreateServer,"Button",0x50010000,128,174,93,10,0x00020000
+  CONTROL "",ipaConnectTo,"SysIPAddress32",0x50010000,53,188,70,10,0x00000000
+  CONTROL "Send",btnSend,"Button",0x50010000,224,174,60,10,0x00020000
+  CONTROL "Connect",btnConnect,"Button",0x50010000,128,188,93,10,0x00020000
+  CONTROL "",ipaYourIP,"SysIPAddress32",0x58010000,53,174,70,10,0x00000000
+  CONTROL "About",btnAbout,"Button",0x50010000,224,188,60,10,0x00020000
+  CONTROL "Your IP:",stcYourIP,"Static",0x50000000,3,176,46,7,0x00000000
+  CONTROL "Connect to:",stcConnectTo,"Static",0x50000000,3,190,46,7,0x00000000
+  CONTROL "mynick",edtMyNick,"Edit",0x50010000,224,161,60,10,0x00020000
+END
